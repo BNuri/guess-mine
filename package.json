@@ -1,0 +1,48 @@
+{
+  "name": "guess-mine",
+  "version": "1.0.0",
+  "description": "Realtime Drawing Game built with SocketIO, Gulp and Node",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server --ignore assets/ --ignore src/static",
+    "build:assets": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BNuri/guess-mine.git"
+  },
+  "author": "NUBEE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BNuri/guess-mine/issues"
+  },
+  "homepage": "https://github.com/BNuri/guess-mine#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "browserify": "^16.5.0",
+    "del": "^5.1.0",
+    "eslint": "^6.0.1",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^4.0.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "pug": "^2.0.4",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "babelify": "^10.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2"
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
+}
