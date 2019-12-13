@@ -1,5 +1,19 @@
-$color: red;
+$color: #f1c40f;
 
 body {
   background-color: $color;
+  .loginBox,
+  .gameBox {
+    display: none;
+  }
+  &.loggedOut {
+    .loginBox {
+      display: block;
+    }
+  }
+  &.loggedIn {
+    .gameBox {
+      display: block;
+    }
+  }
 }
