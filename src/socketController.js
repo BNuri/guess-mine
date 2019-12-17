@@ -7,8 +7,11 @@ const socketController = socket => {
     broadcast(events.newUser, { nickname });
   });
   socket.on(events.disconnect, () => {
-    console.log("disconnected");
     broadcast(events.disconnected, { nickname: socket.nickname });
+  });
+  socket.on(events.sendMsg, ({ message }) => {
+    console.log(message);
+    broadcast(events.newMsg, { message, nickname: socket.nickname });
   });
 };
 
